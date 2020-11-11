@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>AutomnSeminar.utf8</title>
+    <meta charset="utf-8" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/metropolis-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+class: inverse, center, top
+
+&lt;div class="my-logo-left"&gt;&lt;/div&gt;
+&lt;div class="my-logo-right"&gt;&lt;/div&gt;
+&lt;br /&gt; 
+&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+# .small[Functional traits and phylogeny]
+
+&lt;br /&gt;
+
+#### .large[Aurele Toussaint]
+
+#### .large[Autumn 2020]
+
+---
+class: inverse, left, top
+### Functional traits and phylogeny
+&lt;br /&gt;
+&lt;font size="5"&gt;
+- _Functional trait_: **"any morphological, physiological or phenological feature measurable at the individual level."** (Violle et al., 2007)
+
+- _Phylogeny_: relationships among organisms and their evolutionary development  
+
+--
+&lt;br /&gt;
+&lt;br /&gt;
+- Combining _Functional trait_ and _Phylogeny_ allows to investigate if closely related species (in the phylogeny) tend to share more similar traits than not related species
+
+&lt;/font size&gt;
+
+---
+class: inverse, left, top
+### Functional space
+- &lt;font size="5"&gt;Functional space of the plants and mammals.&lt;/font size&gt;
+
+&lt;img src="Figures/Figure_FunctionalSpectra_PlantMammals.png" width="1227" style="display: block; margin: auto;" /&gt;
+.right[Carmona et al. 2020 *BioRxiv*]
+
+---
+class: inverse, left, top
+### Functional space
+- &lt;font size="5"&gt;Internal organization of the functional space. &lt;/font size&gt;
+&lt;br/&gt;
+
+&lt;img src="Figures/TheorethicalFrameWorkCH.png" width="1280" style="display: block; margin: auto;" /&gt;
+&lt;br/&gt;
+
+--
+
+- 'Clades' occupy a unique/redundant functional space between each other
+
+---
+class: inverse, left, top
+### Evolution of the traits
+- &lt;font size="5"&gt;From the functional space to the phylogenetic tree. &lt;/font size&gt;
+
+&lt;img src="AutomnSeminar_files/figure-html/unnamed-chunk-3-.gif" width="60%" height="60%" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, left, top
+### Phylogenetic signal across each functional trait
+- "Statistical dependence among observations for species related by a phylogenetic tree" (Revel 2008)
+
+--
+
+- &lt;font size="5"&gt;Pagel's transformation&lt;/font size&gt;
+&lt;br /&gt;
+&lt;img src="Figures/Figure_phySignal.png" width="85%" height="85%" style="display: block; margin: auto;" /&gt;
+
+&lt;font size="5"&gt;Range from 0: No signal to 1: Perfect signal&lt;/font size&gt;
+
+---
+class: inverse, left, top
+### Fit an evolutionary model to detect potential signal
+&lt;center&gt;&lt;font size = 6&gt;fitContinuous {geiger}&lt;/font&gt;&lt;/center&gt;
+&lt;br&gt;
+- Model *Lambda*: 
+&lt;br&gt;&lt;br&gt;
+&lt;img src="Figures/histo_null.png" width="1280" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, left, top
+### Phylogenetic signal across each functional trait
+&lt;center&gt;&lt;font size = 5&gt;For the six taxonomic groups and their traits&lt;/font&gt;&lt;/center&gt;
+&lt;br&gt;
+&lt;img src="Figures/TableResLambda.png" width="2000" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, left, top
+### Internal organization of the functional space
+&lt;br /&gt;
+- 'Clades' occupy a unique/redundant functional space between each other
+&lt;br /&gt;
+&lt;img src="Figures/PhenogramEvolRates.png" width="1280" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+---
+class: inverse, left, top
+### Internal organization of the functional space
+&lt;br /&gt;
+- 'Clades' occupy a unique/redundant functional space between each other
+&lt;br /&gt;
+&lt;img src="Figures/Figure_ORDERS_MammalsPlants.png" width="1227" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, left, top
+### Functional space
+- Compare the FRic of each order to random FRic
+  - Randomizations: species are sorting within the whole pool of species  
+    
+- For different clades:  
+
+    - Order
+    - Family
+    - Genus
+
+&lt;img src="Figures/histo_null.png" width="75%" height="75%" style="display: block; margin: auto 0 auto auto;" /&gt;
+
+
+---
+class: inverse, left, top
+### FRic vs Null Model across Clades
+ORDER - FAMILY - GENUS     
+&lt;br&gt;
+&lt;img src="Figures/Order_SESFRicMamBirds.png" width="2400" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+
+---
+class: inverse, left, top
+### FRic vs Null Model across Clades
+ORDER - FAMILY - GENUS   
+&lt;br&gt;
+&lt;img src="Figures/Order_SESFRicReptAmp.png" width="60%" height="\textheight" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+---
+class: inverse, left, top
+### Example of freshwater fishes
+&lt;br /&gt;
+Freshwater fishes
+&lt;img src="Figures/Order_SESFRicFish.png" width="2000" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+  
+---
+class: inverse, left, top
+### Phylogenetic distance vs functional distance
+&lt;br /&gt;
+
+&lt;img src="Figures/Order_SESFRicMamBirdsBeta.png" width="2400" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+ 
+---
+class: inverse, left, top
+### Phylogenetic distance vs functional distance
+&lt;br /&gt;
+
+&lt;img src="Figures/Order_SESFRicReptAmpBeta.png" width="60%" height="\textheight" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+---
+class: inverse, left, top
+### Phylogenetic distance vs functional distance
+&lt;br /&gt;
+
+&lt;img src="Figures/Order_SESFRicFishBeta.png" width="2000" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+
+---
+class: inverse, left, top
+### Comparing rates of phenotypic evolution
+
+&lt;div class="row"&gt;
+  &lt;div class="left-column"&gt;
+  &lt;/div&gt;
+  &lt;div class="right-column"&gt;
+&lt;img src="Figures/FunctionalSpacesFishBiogeo.png" width="100%" height="100%" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---
+class: inverse, left, top
+### Comparing rates of phenotypic evolution
+
+&lt;div class="row"&gt;
+  &lt;div class="left-column"&gt;
+      &lt;p&gt;Functional traits can evolved differently within clade&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="right-column"&gt;
+&lt;img src="Figures/Figure_ORDERS_Fish.png" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---
+class: inverse, left, top
+### Functional traits can evolved differently __between__ regions
+
+- Example 1. *Siluriforms*
+  
+&lt;img src="Figures/PhyloSpacesFishBiogeo.png" width="50%" height="50%" style="display: block; margin: auto;" /&gt;
+
+---
+class: inverse, left, top
+### Identification of the shifts
+&lt;div class="row"&gt;
+  &lt;div class="left-column"&gt;
+  &lt;h4&gt;MCMC model: &lt;/h4&gt;
+    &lt;p&gt;- 100,000 generations &lt;/p&gt;
+    &lt;p&gt;- First 20% burned &lt;/p&gt;
+    &lt;p&gt;- Convergence OK &lt;/p&gt;
+    &lt;p&gt;- Mean on 3 MCMC chains &lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="right-column"&gt;
+&lt;img src="Figures/Fish_trait_12.png" width="640" style="display: block; margin: auto 0 auto auto;" /&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+---
+class: inverse, left, top
+### Identification of the shifts for the 15 traits of the Siluriforms
+  
+&lt;img src="Figures/Fish15TraitsMCMC.png" width="1981" style="display: block; margin: auto;" /&gt;
+
+
+---
+class: inverse, left, top
+### Evolution of the Neotropical species traits compared to the background evolution
+&lt;br /&gt;
+Example for the **Siluriforms**  
+&lt;img src="Figures/evolutionaryRates.png" width="50%" height="40%" style="display: block; margin: auto;" /&gt;
+&lt;center&gt;The shifts DO NOT match with geographic divergences&lt;/center&gt;
+
+---
+class: inverse, left, top
+### Conclusion
+- The functional traits are phylogenetically conserved  
+
+--
+
+- Among taxonomic groups, the evolution of functional trait diverged:
+
+--
+
+  - Mammals: Orders strongly diverge between each other but not Family/Genus
+  - Plants/Birds: Clades are not functionnally clustered but some clades are clustered  
+  - Reptiles/Amphibians: Not clustered
+  - Fishes: Order/Family/Genus are clustered
+
+--
+
+- The phylogeny allows to detect complicated evolution patterns of traits
+  - Identified shifts in traits evolution along the phylogeny
+  - Correlation between divergence between regions
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"seal": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
